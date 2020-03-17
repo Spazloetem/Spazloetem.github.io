@@ -15,11 +15,9 @@
 		var subtext = document.getElementById("subtext");
 		var Reright = document.getElementById("Reright");
 		var Releft = document.getElementById("Releft");
+		subtext.classList.add('bounceInright');
 		$(window).scroll(function() {
 			var st = this.scrollY;
-			if( st == 0) {
-				subtext.classList.add('bounceInright');
-			}
 			
 			if (st > 0){
 				block1.classList.add('bounceInUp');
